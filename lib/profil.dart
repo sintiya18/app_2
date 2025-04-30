@@ -52,7 +52,7 @@ class Profil extends StatelessWidget {
                       ),
                       SizedBox(height: 16),
                       Text(
-                        'Pasword',
+                        'Password',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
