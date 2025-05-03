@@ -28,6 +28,7 @@ class HalProfil extends StatelessWidget {
               SizedBox(height: 4),
               Text(
                 'sintiya12@gmail.com',
+                style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue'),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 16),
@@ -39,6 +40,7 @@ class HalProfil extends StatelessWidget {
               SizedBox(height: 4),
               Text(
                 '12345',
+                style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue'),
                 textAlign: TextAlign.center,
               ),
             ],
