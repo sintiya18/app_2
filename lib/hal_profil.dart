@@ -7,11 +7,8 @@ class HalProfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'My Profil',
-          style: TextStyle(
-            fontFamily: 'Comic_Neue',
-            fontWeight: FontWeight.bold, 
+        title: const Text('My Profil',style: TextStyle(
+            fontFamily: 'Comic_Neue',fontWeight: FontWeight.bold, 
             fontSize: 24, 
           ),
         ),
@@ -30,9 +27,7 @@ class HalProfil extends StatelessWidget {
                 radius: 50,
               ),
               const SizedBox(height: 20),
-
-           
-              Card(
+            Card(
                 elevation: 6,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -46,21 +41,14 @@ class HalProfil extends StatelessWidget {
                       children: [
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Nama :',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('Nama :',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
                         const SizedBox(height: 4),
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Sinntiya Ayu Setyowati',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                          child: const Text('Sintiya Ayu Setyowati',style: TextStyle(fontWeight: FontWeight.bold,
                               fontFamily: 'Comic_Neue',
                             ),
                           ),
@@ -68,10 +56,21 @@ class HalProfil extends StatelessWidget {
                         const SizedBox(height: 8),
                         Align(
                           alignment: Alignment.centerLeft,
-                          child: const Text(
-                            'NIM :',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                          child: const Text('NIM :',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Align(
+                          alignment: Alignment.centerLeft, 
+                          child: const Text('220102045',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Align(
+                          alignment: Alignment.centerLeft, 
+                          child: const Text('Alamat :',style: TextStyle(fontWeight: FontWeight.bold,
                               fontFamily: 'Comic_Neue',
                             ),
                           ),
@@ -79,77 +78,36 @@ class HalProfil extends StatelessWidget {
                         const SizedBox(height: 4),
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            '220102045',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('Brubuh, Ngadirojo, Wonogiri', style: TextStyle(fontWeight: FontWeight.bold,
+                          fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
                         const SizedBox(height: 8),
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Alamat :',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('Email :',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
                         const SizedBox(height: 4),
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Brubuh, Ngadirojo, Wonogiri',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('sintiya12@gmail.com',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
                         const SizedBox(height: 8),
                         Align(
                           alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Email :',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Align(
-                          alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'sintiya12@gmail.com',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Align(
-                          alignment: Alignment.centerLeft, 
-                          child: const Text(
-                            'Password :',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('Password :',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
                         const SizedBox(height: 4),
                         Align(
                           alignment: Alignment.centerLeft,
-                          child: const Text(
-                            '12345',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: 'Comic_Neue',
+                          child: const Text('12345',style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Comic_Neue',
                             ),
                           ),
                         ),
