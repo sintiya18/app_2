@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
 import 'profil.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
-class Login extends StatelessWidget {
+
+
+class Login extends StatefulWidget {
  
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  TextEditingController emailController=TextEditingController() ;
+  TextEditingController passwordController=TextEditingController();
   final ValueNotifier<bool> _obscurePassword = ValueNotifier<bool>(true);
 
   @override
@@ -19,9 +30,10 @@ class Login extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
+              controller: emailController,
               decoration: InputDecoration(
                 labelText: 'Email',
-                prefixIcon: Icon(Icons.person),
+                prefixIcon: Icon(Icons.email),
                 border: OutlineInputBorder(),
               ),
             ),
@@ -31,6 +43,7 @@ class Login extends StatelessWidget {
               valueListenable: _obscurePassword,
               builder: (context, value, child) {
                 return TextField(
+                  controller: passwordController,
                   obscureText: value,
                   decoration: InputDecoration(
                     labelText: 'Password',
@@ -50,9 +63,14 @@ class Login extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (_) => Profil()),
-                );
+                //Navigator.of(context).pushReplacement(
+                  //MaterialPageRoute(builder: (_) => Profil()),
+                //);
+                final box = GetStorage();
+                box.write('email',emailController.text);
+                
+                //navigasi untuk pindah halaman
+               Get.to(()=>Profil());
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 45, 216, 228),

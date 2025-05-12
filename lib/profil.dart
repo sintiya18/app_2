@@ -64,6 +64,7 @@ class Profil extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ],
+                    
                   ),
                 ),
               ),
