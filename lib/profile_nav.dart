@@ -15,12 +15,12 @@ class ProfileNav extends StatelessWidget {
             fontSize: 16,
           ),
         ),
-        centerTitle: false, // TIDAK di tengah
-        backgroundColor: Colors.transparent, // transparan untuk hilangkan border atas
-        elevation: 0, // hilangkan bayangan bawah AppBar
+        centerTitle: false, 
+        backgroundColor: Colors.transparent, 
+        elevation: 0,
         automaticallyImplyLeading: false,
       ),
-      extendBodyBehindAppBar: true, // isi body tampil dari bawah status bar
+      extendBodyBehindAppBar: true, 
       body: SafeArea(
         child: Center(
           child: Padding(
